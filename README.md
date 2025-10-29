@@ -7,12 +7,12 @@
 
 ## 🧭 **Navigation**
 Jump to any section 👇  
-- [🏠 Home](#-home)
-- [👟 Players](#-players)
-- [⚔️ Compare](#-compare)
-- [🏟️ Teams](#-teams)
-- [ℹ️ About](#-about)
-- [📞 Footer](#-footer)
+- [🏠 Home](#home)
+- [👟 Players](#players)
+- [⚔️ Compare](#compare)
+- [🏟️ Teams](#teams)
+- [ℹ️ About](#about)
+- [📞 Footer](#footer)
 
 ---
 
@@ -116,4 +116,4 @@ All data shown are for demonstration and educational purposes only.
 ---
 
 ## 🧭 Quick Return
-⬆️ [Back to Top](#-goaltrackr)
+⬆️ [Back to Top](#goaltrackr)
