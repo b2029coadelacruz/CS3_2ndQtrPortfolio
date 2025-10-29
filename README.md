@@ -1,119 +1,192 @@
-# ⚽ **GoalTrackr**
-### *Track. Compare. Dominate.*
-
-> A football statistics tracker built with HTML, CSS, and JavaScript — all consolidated into one interactive README.
+# Football ⚽  
+*A Comprehensive Guide to the Beautiful Game*  
 
 ---
 
-## 🧭 **Navigation**
-Jump to any section 👇  
-- [🏠 Home](#home)
-- [👟 Players](#players)
-- [⚔️ Compare](#compare)
-- [🏟️ Teams](#teams)
-- [ℹ️ About](#about)
-- [📞 Footer](#footer)
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #e63946;
+}
+section {
+  padding: 100px 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+h1, h2 {
+  color: #fff;
+}
+h1 {
+  font-size: 3em;
+  margin-top: 2em;
+  text-align: center;
+}
+h2 {
+  color: #e63946;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+.card {
+  background-color: #000;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+footer img {
+  width: 24px;
+  margin: 0 5px;
+  filter: invert(1);
+}
+</style>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#overview">OVERVIEW</a>
+  <a href="#players">PLAYERS</a>
+  <a href="#training">TRAINING & STATS</a>
+  <a href="#hall">HALL OF FAME</a>
+  <a href="#sources">SOURCES</a>
+</nav>
 
 ---
 
-## 🏠 Home
-![Football Banner](https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg)
+<section id="home">
+  <h1>Welcome</h1>
+  <p style="text-align:center; font-size:1.2em;">
+    <em>A Comprehensive Guide to Football</em>
+  </p>
+  <p style="text-align:center; color:#e63946;">
+    This is a project for Computer Science 3. All sources will be credited on the sources page.
+  </p>
 
-Welcome to **GoalTrackr**, your all-in-one football statistics hub!  
-Here you can **track your favorite players**, **compare performance**, and **analyze team success** — powered by modern web technologies.
-
-### 🌟 Featured Players
-| Player | Goals | Assists | Rating |
-|:--|:--:|:--:|:--:|
-| 🐐 Lionel Messi | 25 | 18 | ⭐ 9.3 |
-| ⚡ Erling Haaland | 23 | 5 | ⭐ 8.9 |
-| 🚀 Kylian Mbappé | 21 | 8 | ⭐ 9.0 |
-| 🦁 Bukayo Saka | 19 | 10 | ⭐ 8.7 |
-
-> “Track. Compare. Dominate.” – *The GoalTrackr Motto*
-
----
-
-## 👟 Players
-![Players Banner](https://upload.wikimedia.org/wikipedia/commons/9/97/Soccer_players_in_action_illustration.png)
-
-Get detailed performance stats for today’s top footballers.  
-Use filters, sort tables, and explore season data in the full site version.
-
-| Name | Team | Matches | Goals | Assists | Rating |
-|:--|:--|:--:|:--:|:--:|:--:|
-| 🐐 Lionel Messi | Inter Miami | 28 | 25 | 18 | 9.3 |
-| ⚡ Erling Haaland | Manchester City | 27 | 23 | 5 | 8.9 |
-| 🚀 Kylian Mbappé | PSG | 25 | 21 | 8 | 9.0 |
-| 🦁 Bukayo Saka | Arsenal | 29 | 19 | 10 | 8.7 |
-
-📊 *In the actual site, this table will be interactive using JavaScript (sortable and searchable).*
-
----
-
-## ⚔️ Compare
-![Compare Banner](https://upload.wikimedia.org/wikipedia/commons/e/ee/Soccer_strategy_tactics_board_icon.png)
-
-Compare football legends head-to-head and discover who dominates the stats.  
-Here’s an example between **Messi** and **Haaland**:
-
-| Stat | 🐐 Messi | ⚡ Haaland |
-|:--|:--:|:--:|
-| Matches | 28 | 27 |
-| Goals | 25 | 23 |
-| Assists | 18 | 5 |
-| Rating | ⭐ 9.3 | ⭐ 8.9 |
-
-📈 *In the web version, this section uses Chart.js for live bar or radar charts.*
+  <div class="card-container">
+    <div class="card">
+      <h2>Overview</h2>
+      <p><em>Get ORIENTED</em><br> Learn about the sport’s rich history, major leagues, and the structure of global competitions.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_field_illustration.svg" alt="Football Field">
+    </div>
+    <div class="card">
+      <h2>Players</h2>
+      <p><em>Meet the LEGENDS</em><br> Discover top football players, their achievements, and team affiliations worldwide.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Player">
+    </div>
+    <div class="card">
+      <h2>Training & Stats</h2>
+      <p><em>Know the GAME</em><br> Explore football techniques, stats tracking, and the role of technology in modern matches.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Soccer_training_drills.jpg" alt="Training">
+    </div>
+    <div class="card">
+      <h2>Hall of Fame</h2>
+      <p><em>Know the CHAMPIONS</em><br> View the legacy of football’s greatest players, from Pelé to Messi, who changed the game forever.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Pele_1970_World_Cup.jpg" alt="Hall of Fame">
+    </div>
+  </div>
+</section>
 
 ---
 
-## 🏟️ Teams
-![Teams Banner](https://upload.wikimedia.org/wikipedia/commons/5/5c/Soccer_field_diagram.svg)
-
-Explore football clubs and their top scorers across leagues.
-
-| Team | League | Top Scorer |
-|:--|:--|:--|
-| 🩷 Inter Miami | MLS | Lionel Messi |
-| 💙 Manchester City | Premier League | Erling Haaland |
-| 🔵 PSG | Ligue 1 | Kylian Mbappé |
-| 🔴 Arsenal | Premier League | Bukayo Saka |
-
-📍 *Each team page will have its logo, average stats, and roster overview.*
+<section id="overview">
+  <h2>Overview</h2>
+  <p>Football, or soccer, is the world’s most popular sport, played by millions and watched by billions. From the local fields to global tournaments like the FIFA World Cup, the game unites people through teamwork, skill, and passion.</p>
+</section>
 
 ---
 
-## ℹ️ About
-![About Banner](https://upload.wikimedia.org/wikipedia/commons/3/3f/Information_icon.svg)
-
-**GoalTrackr** is a project created to visualize and compare football player performance interactively.  
-It helps fans, students, and analysts learn more about data analysis in sports.  
-
-**🧩 Built with:**  
-- HTML  
-- CSS  
-- JavaScript  
-- Markdown (for this README)
-
-**👥 Developer Info:**  
-GoalTrackr Web Dev Project (2025)  
-📧 goaltrackr@example.com  
-
-💡 *This project demonstrates DOM manipulation, dynamic charts, and responsive layouts.*
+<section id="players">
+  <h2>Players</h2>
+  <p>This section highlights some of the most prominent football players and their contributions to the sport.</p>
+  <ul>
+    <li>Lionel Messi — Argentina, Inter Miami CF</li>
+    <li>Cristiano Ronaldo — Portugal, Al Nassr FC</li>
+    <li>Kylian Mbappé — France, Paris Saint-Germain</li>
+    <li>Erling Haaland — Norway, Manchester City</li>
+  </ul>
+</section>
 
 ---
 
-## 📞 Footer
-© 2025 **GoalTrackr**  
-All data shown are for demonstration and educational purposes only.  
-
-**Follow us:**  
-[![GitHub](https://img.shields.io/badge/GitHub--lightgrey?logo=github)](#)
-[![Twitter](https://img.shields.io/badge/Twitter--blue?logo=twitter)](#)
-[![Instagram](https://img.shields.io/badge/Instagram--purple?logo=instagram)](#)
+<section id="training">
+  <h2>Training & Stats</h2>
+  <p>Football training focuses on physical conditioning, ball control, and strategic awareness. Statistics are increasingly vital, with data analytics used to track player speed, possession rates, and scoring efficiency.</p>
+</section>
 
 ---
 
-## 🧭 Quick Return
-⬆️ [Back to Top](#goaltrackr)
+<section id="hall">
+  <h2>Hall of Fame</h2>
+  <p>Some players leave an everlasting mark on football history. Here are a few icons whose names define greatness:</p>
+  <ul>
+    <li>Pelé — The King of Football</li>
+    <li>Diego Maradona — The Golden Boy</li>
+    <li>Zinedine Zidane — The Maestro</li>
+    <li>Lionel Messi — The Magician</li>
+  </ul>
+</section>
+
+---
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p>All materials and images used are credited to their respective owners:</p>
+  <ul>
+    <li>Wikipedia Commons (Images)</li>
+    <li>FIFA.com (Player Data)</li>
+    <li>UEFA.com (Stats and League Info)</li>
+  </ul>
+</section>
+
+---
+
+<footer>
+  <p>&copy; 2025 Football Project | Designed by WDProjSectionLastNames</p>
+  <div>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"></a>
+  </div>
+</footer>
